@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-sass",
-  "description": "A Gatsby starter with Sass and no assumptions",
-  "version": "0.1.1",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "name": "gatsby-skeleton",
+  "description": "Bare bones Gatsby starter template",
+  "version": "1.0",
+  "author": "Dean Elliott <dean@deanelliott.me>",
   "dependencies": {
     "gatsby": "^2.3.31",
     "gatsby-plugin-react-helmet": "^3.0.12",
@@ -33,9 +33,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/gatsby-starter-sass"
+    "url": "https://github.com/delliott85/gatsby-skeleton"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/gatsby-starter-sass/issues"
+    "url": "https://github.com/delliott85/gatsby-skeleton/issues"
   }
 }
