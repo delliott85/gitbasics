@@ -11,7 +11,12 @@ import styles from './index.module.scss';
 
 export default function Index() {
     const windowGlobal = typeof window !== 'undefined' && window;
-    const [colorMode, setColorMode] = useState(windowGlobal.localStorage.getItem('colorMode') || 'light');
+
+    let initColorMode = 'light';
+    if (windowGlobal) {
+        initColorMode = windowGlobal.localStorage.getItem('colorMode') || 'light'
+    }
+    const [colorMode, setColorMode] = useState(initColorMode);
 
     useEffect(() => {
         document.body.setAttribute('color-mode', colorMode);
