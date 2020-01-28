@@ -10,7 +10,8 @@ import ColorModeToggle from '../components/ColorModeToggle';
 import styles from './index.module.scss';
 
 export default function Index() {
-    const [colorMode, setColorMode] = useState(localStorage.getItem('colorMode') || 'light');
+    const windowGlobal = typeof window !== 'undefined' && window
+    const [colorMode, setColorMode] = useState(lwindowGlobal.ocalStorage.getItem('colorMode') || 'light');
 
     useEffect(() => {
         document.body.setAttribute('color-mode', colorMode);
@@ -24,7 +25,7 @@ export default function Index() {
 
         // Assign color mode to body & set local storage to remember for future visits
         document.body.setAttribute('color-mode', newColorMode);
-        localStorage.setItem('colorMode', newColorMode);
+        windowGlobal.localStorage.setItem('colorMode', newColorMode);
     }
 
     const items = data.map((item, i) => {
