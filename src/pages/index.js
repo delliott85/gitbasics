@@ -11,7 +11,7 @@ import styles from './index.module.scss';
 
 export default function Index() {
     const windowGlobal = typeof window !== 'undefined' && window
-    const [colorMode, setColorMode] = useState(windowGlobal.ocalStorage.getItem('colorMode') || 'light');
+    const [colorMode, setColorMode] = useState(windowGlobal.localStorage.getItem('colorMode') || 'light');
 
     useEffect(() => {
         document.body.setAttribute('color-mode', colorMode);
