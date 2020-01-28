@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-skeleton",
-  "description": "Bare bones Gatsby starter template",
+  "name": "git-basics",
+  "description": "A little cheat sheet of common commands to help you become a Git pro.",
   "version": "1.0",
   "author": "Dean Elliott <dean@deanelliott.me>",
   "dependencies": {
@@ -13,7 +13,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {},
   "keywords": [
@@ -33,9 +33,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/delliott85/gatsby-skeleton"
+    "url": "https://github.com/delliott85/git-basics"
   },
   "bugs": {
-    "url": "https://github.com/delliott85/gatsby-skeleton/issues"
+    "url": "https://github.com/delliott85/git-basics/issues"
   }
 }

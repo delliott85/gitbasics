@@ -1,0 +1,22 @@
+@import '../../src/static/scss/settings/_settings.scss';
+
+.footer {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    a {
+        background: var(--accentYellow);
+        padding: 2px 5px;
+        text-transform: uppercase;
+        color: var(--dark);
+        transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+
+        &:hover,
+        &:focus {
+            background: rgba(var(--text-rgb), 1);
+            color: var(--accentYellow);
+        }
+    }
+}
