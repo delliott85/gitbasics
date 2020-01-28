@@ -10,7 +10,7 @@ import ColorModeToggle from '../components/ColorModeToggle';
 import styles from './index.module.scss';
 
 export default function Index() {
-    const windowGlobal = typeof window !== 'undefined' && window
+    const windowGlobal = typeof window !== 'undefined' && window;
     const [colorMode, setColorMode] = useState(windowGlobal.localStorage.getItem('colorMode') || 'light');
 
     useEffect(() => {
