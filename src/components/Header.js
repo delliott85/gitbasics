@@ -14,9 +14,9 @@ export default function Header({ colorMode }) {
 
     const siteTitle = 'Git Basics';
     const siteDesc = 'A little cheat sheet of common commands to help you become a Git pro.';
-    const siteUrl = 'http://localhost:8000';
-    const ogImg = '/static/src/images/gitgood-og-image.png';
-    const twitterImg = '/static/src/images/gitgood-twitter-card-image.png';
+    const siteUrl = 'https://gitbasics.xyz';
+    const ogImg = 'images/social/git-basics-og-image.png';
+    const twitterImg = 'images/social/git-basics-twitter-card-image.png';
     const twitterAcc = '@delliott85';
 
     const siteMeta = (
@@ -27,6 +27,10 @@ export default function Header({ colorMode }) {
             <meta name="theme-color" content={themeColor} />
             <meta name="robots" content="index,follow" />
             <meta name="googlebot" content="index,follow" />
+
+            <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png?v=1" />
+            <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png?v=1" />
+            <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png?v=1" />
 
             <meta property="fb:app_id" content="123456789" />
             <meta property="og:url" content={siteUrl} />

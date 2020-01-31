@@ -168,6 +168,11 @@ export const data = [
         description: 'Save modified and staged changes'
     },
     {
+        command: 'git stash --include-untracked',
+        type: 'temporary',
+        description: 'The same as a regular stash, but saving your untracked files too'
+    },
+    {
         command: 'git stash list',
         type: 'temporary',
         description: 'List stack-order of stashed file changes'
@@ -175,14 +180,16 @@ export const data = [
     {
         command: 'git stash pop',
         type: 'temporary',
-        description: 'Write working from top of stash stack'
+        description: 'Resume working on the stash at the top of your stash list.'
     },
     {
-        command: 'git stash drop',
+        command: 'git stash drop [stash-id]',
         type: 'temporary',
-        description: 'Discard the changes from top of stash stack'
+        description: 'Delete a particular stash'
+    },
+    {
+        command: 'git stash clear',
+        type: 'temporary',
+        description: 'Delete all stashes'
     }
 ];
-
-// Credit
-// https://education.github.com/git-cheat-sheet-education.pdf
