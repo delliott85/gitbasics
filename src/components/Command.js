@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
+
 import styles from './Command.module.scss';
 
 export default function Command({ command }) {
@@ -25,6 +27,13 @@ export default function Command({ command }) {
                 target.setAttribute('data-active', false);
             }, 1500);
         }
+
+        trackCustomEvent({
+            category: "Command",
+            action: "Click",
+            label: "Copied",
+            value: command.command
+        });
     }
 
     return (
