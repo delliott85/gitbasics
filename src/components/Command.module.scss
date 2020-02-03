@@ -24,42 +24,44 @@
     position: relative;
     transition: transform 0.15s ease-in-out;
 
-    &:focus,
-    &:active {
-        transform: scale(0.98);
-    }
+    @media (min-width: 641px) {
+        &:focus,
+        &:active {
+            transform: scale(0.98);
+        }
 
-    &:before,
-    &:after {
-        opacity: 0;
-        transition: opacity 0.15s ease-in-out;
-    }
-
-    &:before {
-        content: "";
-        border: green 1px solid;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-
-    &:after {
-        content: "Copied to clipboard";
-        background: green;
-        position: absolute;
-        top: 0;
-        right: 0;
-        color: #fff;
-        padding: 3px 6px;
-        transform: translateY(-100%);
-    }
-
-    &[data-active="true"] {
         &:before,
         &:after {
-            opacity: 1;
+            opacity: 0;
+            transition: opacity 0.15s ease-in-out;
+        }
+
+        &:before {
+            content: "";
+            border: green 1px solid;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        &:after {
+            content: "Copied to clipboard";
+            background: green;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+            padding: 3px 6px;
+            transform: translateY(-100%);
+        }
+
+        &[data-active="true"] {
+            &:before,
+            &:after {
+                opacity: 1;
+            }
         }
     }
 }

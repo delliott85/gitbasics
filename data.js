@@ -29,7 +29,12 @@ export const data = [
     {
         command: 'git add [file]',
         type: 'stage',
-        description: 'Add a file to your next commit (stage)',
+        description: 'Add a particular file to your next commit (stage)',
+    },
+    {
+        command: 'git add .',
+        type: 'stage',
+        description: 'Add all files to your next commit'
     },
     {
         command: 'git reset [file]',
@@ -161,35 +166,35 @@ export const data = [
         type: 'rewrite',
         description: 'Clear staging area, rewrite working tree from specified commit'
     },
-    // Temporary Commits
+    // stash Commits
     {
         command: 'git stash',
-        type: 'temporary',
+        type: 'stash',
         description: 'Save modified and staged changes'
     },
     {
         command: 'git stash --include-untracked',
-        type: 'temporary',
+        type: 'stash',
         description: 'The same as a regular stash, but saving your untracked files too'
     },
     {
         command: 'git stash list',
-        type: 'temporary',
+        type: 'stash',
         description: 'List stack-order of stashed file changes'
     },
     {
         command: 'git stash pop',
-        type: 'temporary',
+        type: 'stash',
         description: 'Resume working on the stash at the top of your stash list.'
     },
     {
         command: 'git stash drop [stash-id]',
-        type: 'temporary',
+        type: 'stash',
         description: 'Delete a particular stash'
     },
     {
         command: 'git stash clear',
-        type: 'temporary',
+        type: 'stash',
         description: 'Delete all stashes'
     }
 ];

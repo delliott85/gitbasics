@@ -19,7 +19,7 @@ import styles from './Header.module.scss';
 export default function Header({ colorMode }) {
     const themeColor = colorMode === 'light' ? '#eae8dc' : '#001019';
 
-    const siteTitle = 'Git Basics';
+    const siteTitle = 'Git Basics | Essential git commands';
     const siteDesc = 'A little cheat sheet of common commands to help you become a Git pro.';
     const siteUrl = 'https://gitbasics.xyz';
     const twitterAcc = '@deadgooddean';

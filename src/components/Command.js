@@ -15,14 +15,16 @@ export default function Command({ command }) {
 
     const handleCommandClick = (e) => {
         const target = e.currentTarget;
-        
-        copyCommand(target);
+        const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
-        target.setAttribute('data-active', true);
+        if (!isMobile) {
+            copyCommand(target);
+            target.setAttribute('data-active', true);
 
-        setTimeout(() => {
-            target.setAttribute('data-active', false);
-        }, 1500);
+            setTimeout(() => {
+                target.setAttribute('data-active', false);
+            }, 1500);
+        }
     }
 
     return (
