@@ -24,7 +24,7 @@ export const data = [
     {
         command: 'git status',
         type: 'stage',
-        description: 'Show modified files in the local, working, directory.'
+        description: 'Show modified files in the local, working, directory'
     },
     {
         command: 'git add [file]',
@@ -185,12 +185,12 @@ export const data = [
     {
         command: 'git stash pop',
         type: 'stash',
-        description: 'Resume working on the stash at the top of your stash list.'
+        description: 'Resume working on the stash at the top of your stash list'
     },
     {
         command: 'git stash drop [stash-id]',
         type: 'stash',
-        description: 'Delete a particular stash'
+        description: 'Delete a specific stash'
     },
     {
         command: 'git stash clear',
