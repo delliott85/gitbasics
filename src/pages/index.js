@@ -56,7 +56,8 @@ export default function Index() {
             <textarea
                 id="command-input"
                 style={{
-                    position: 'absolute',
+                    position: 'fixed',
+                    bottom: 0,
                     left: '-200vw'
                 }}
             />
