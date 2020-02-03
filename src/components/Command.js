@@ -17,16 +17,13 @@ export default function Command({ command }) {
 
     const handleCommandClick = (e) => {
         const target = e.currentTarget;
-        const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
-        if (!isMobile) {
-            copyCommand(target);
-            target.setAttribute('data-active', true);
+        copyCommand(target);
+        target.setAttribute('data-active', true);
 
-            setTimeout(() => {
-                target.setAttribute('data-active', false);
-            }, 1500);
-        }
+        setTimeout(() => {
+            target.setAttribute('data-active', false);
+        }, 1500);
 
         trackCustomEvent({
             category: "Command",
