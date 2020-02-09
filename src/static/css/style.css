@@ -5,22 +5,18 @@
 :root {
   --text-rgb: 0, 16, 25;
   --background-rgb: 234, 232, 220;
+  --dark: rgb(0, 16, 25);
+  --light: rgb(234, 232, 220);
   --accentRed: #d62828;
   --accentOrange: #f77f00;
   --accentYellow: #fcbf49;
 }
 
-body[color-mode="dark"] {
+body[color-mode=dark] {
   --background-rgb: 0, 16, 25;
   --text-rgb: 234, 232, 220;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-rgb: 0, 16, 25;
-    --text-rgb: 234, 232, 220;
-  }
-}
 html {
   font-size: 62.5%;
 }

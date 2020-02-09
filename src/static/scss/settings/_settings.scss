@@ -13,10 +13,3 @@ body[color-mode="dark"] {
     --background-rgb: 0, 16, 25;
     --text-rgb: 234, 232, 220;
 }
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background-rgb: 0, 16, 25;
-        --text-rgb: 234, 232, 220;
-    }
-}
