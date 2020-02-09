@@ -6,6 +6,10 @@
     font-size: 1.2rem;
     font-weight: 700;
 
+    p + p {
+        margin-top: 2em;
+    }
+
     a {
         background: var(--accentYellow);
         padding: 2px 5px;
