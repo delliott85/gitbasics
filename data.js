@@ -68,7 +68,7 @@ export const data = [
         description: 'Create a new branch at the current commit'
     },
     {
-        command: 'git checkout',
+        command: 'git checkout [branch]',
         type: 'branch',
         description: 'Switch to another branch and check it out into your local, working, directory'
     },
