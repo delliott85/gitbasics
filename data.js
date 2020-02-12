@@ -1,16 +1,6 @@
 export const data = [
     // Setup
     {
-        command: 'git config --global user.name “[firstname lastname]”',
-        type: 'setup',
-        description: 'Set some identifying credentials for when reviewing version history'
-    },
-    {
-        command: 'git config --global user.email “[valid-email]”',
-        type: 'setup',
-        description: 'Set an email address that will be associated with each history marker'
-    },
-    {
         command: 'git init',
         type: 'setup',
         description: 'Initialize an existing local directory as a Git repository'
@@ -183,9 +173,14 @@ export const data = [
         description: 'List stack-order of stashed file changes'
     },
     {
+        command: 'git stash apply',
+        type: 'stash',
+        description: 'Resume working on the stash at the top of your stash list while keeping the stash intact.'
+    },
+    {
         command: 'git stash pop',
         type: 'stash',
-        description: 'Resume working on the stash at the top of your stash list'
+        description: 'Resume working on the stash at the top of your stash list and delete the stash.'
     },
     {
         command: 'git stash drop [stash-id]',
