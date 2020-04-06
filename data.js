@@ -32,6 +32,11 @@ export const data = [
         description: 'Unstage a file while retaining the changes in local directory'
     },
     {
+        command: 'git reset --hard',
+        type: 'stage',
+        description: 'Discard all local changes to all files.'
+    },
+    {
         command: 'git diff',
         type: 'stage',
         description: 'See changes to your unstaged files'
