@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-import { data } from '../../data';
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Command from '../components/Command';
+import CommandList from '../components/CommandList';
 import ColorModeToggle from '../components/ColorModeToggle';
-
-import styles from './index.module.scss';
 
 export default function Index() {
     const windowGlobal = typeof window !== 'undefined' && window;
@@ -33,21 +29,10 @@ export default function Index() {
         windowGlobal.localStorage.setItem('colorMode', newColorMode);
     }
 
-    const items = data.map((item, i) => {
-        return (
-            <Command
-                key={`command-${i}`}
-                command={item}
-            />
-        );
-    });
-
     return (
         <div style={{ position: 'relative' }}>
             <Header />
-            <ul className={styles.grid}>
-                {items}
-            </ul>
+            <CommandList />
             <Footer />
             <ColorModeToggle
                 colorMode={colorMode}

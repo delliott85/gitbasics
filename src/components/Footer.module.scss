@@ -6,8 +6,16 @@
     font-size: 1.2rem;
     font-weight: 700;
 
+    @media (min-width: 391px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
     p + p {
-        margin-top: 2em;
+        @media (max-width: 390px) {
+            margin-top: 2em;
+        }
     }
 
     a {

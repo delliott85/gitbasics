@@ -1,0 +1,40 @@
+@import '../../src/static/scss/settings/_settings.scss';
+
+.section {
+    max-width: 1080px;
+    margin: 0 auto 15px;
+    padding: 0 20px;
+
+    @media (min-width: 391px) {
+        margin-bottom: 75px;
+    }
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: relative;
+
+    &:after {
+        content: "";
+        background: var(--accentYellow);
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+}
